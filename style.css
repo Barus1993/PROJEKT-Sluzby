@@ -1,0 +1,142 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/* spolecne */
+
+body {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8B8B8B;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 28px;
+    color: #000000;
+    margin: 10px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    margin: 60px 0px 15px 0px;
+}
+
+.box {
+    font-weight: 300;
+    font-size: 13px;
+    color: #8B8B8B;
+}
+
+.tlacitko {
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 25px;
+}
+
+.dobrodruzstvi {
+    background-color: #407BFF;
+    width: 195px;
+}
+
+.pohoda {
+    background-color: #8B8B8B;
+    width: 220px;
+}
+
+/* -------------------mobilni  vzhled--------------------*/
+.uvod {
+    display: flex;
+    flex-direction: column;
+}
+.blok {
+    background-color: #FAFAFA;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.foto {
+    width: 350px;
+    margin: 0px 60px 30px 60px;
+    align-self: center;
+}
+
+.cara {
+    border-top: 2px #407BFF solid;
+    width: 60px;
+    align-self: center;
+}
+
+.box {
+    display: flex;
+    height: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    margin: 15px 0px;
+}
+
+.boxiky {
+    margin-top: 30px;
+}
+
+.spodni {
+    margin-bottom: 0px;
+}
+
+.ikona {
+    height: 40px;
+}
+
+.radek {
+    margin: 15px 0px auto;
+}
+
+/* ---------------------------tablet-----------------------------*/
+
+@media (min-width: 640px) {
+
+    .foto {
+        width: 400px;
+    }
+    .radek {
+       display: flex;
+       justify-content: center;
+    }
+    .tlacitko {
+        margin: 0px;   
+    }
+
+    .pohoda {
+        margin-left: 20px;
+    }
+
+    .box {
+        height: 172px;
+        flex-direction: column;
+        margin: 0 10px;
+    }
+    .boxiky {
+        display: inline-flex;
+    }
+}
+
+/* -----------------------------PC------------------------------- */
+
+@media (min-width: 1100px) {
+
+    .foto {
+        width: 100%;
+    }
+
+    .uvod {
+        display: inline-flex;
+    }
+}
