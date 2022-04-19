@@ -4,7 +4,6 @@ html { box-sizing: border-box; }
 /* spolecne */
 
 body {
-    
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -16,20 +15,23 @@ h1 {
     font-weight: 500;
     font-size: 28px;
     color: #000000;
-    margin: 10px;
+    padding: 10px;
+    margin: 0;
 }
 
 h2 {
     font-weight: 500;
     font-size: 16px;
     color: #000000;
-    margin: 60px 0px 15px 0px;
+    padding-top: 60px;
+    margin: 0;
 }
 
 .box {
     font-weight: 300;
     font-size: 13px;
     color: #8B8B8B;
+    background-color: #FFFFFF;
 }
 
 .tlacitko {
@@ -52,10 +54,7 @@ h2 {
 }
 
 /* -------------------mobilni  vzhled--------------------*/
-.uvod {
-    display: flex;
-    flex-direction: column;
-}
+
 .blok {
     background-color: #FAFAFA;
     text-align: center;
@@ -63,9 +62,15 @@ h2 {
 }
 
 .foto {
-    width: 350px;
-    margin: 0px 60px 30px 60px;
+    max-width: 100%;
+    height: auto;
     align-self: center;
+    padding-bottom: 30px;
+}
+
+.ctverec1 {
+    display: flex;
+    flex-direction: column;
 }
 
 .cara {
@@ -81,6 +86,8 @@ h2 {
     border-radius: 10px;
     box-shadow: 0px 4px 6px #407BFF1F;
     margin: 15px 0px;
+    align-items: center;
+    gap: 30px;
 }
 
 .boxiky {
@@ -96,35 +103,37 @@ h2 {
 }
 
 .radek {
-    margin: 15px 0px auto;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
 }
 
 /* ---------------------------tablet-----------------------------*/
 
 @media (min-width: 640px) {
 
-    .foto {
-        width: 400px;
-    }
     .radek {
-       display: flex;
-       justify-content: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
     }
     .tlacitko {
         margin: 0px;   
     }
-
-    .pohoda {
-        margin-left: 20px;
-    }
-
     .box {
-        height: 172px;
+        height: auto;
+        flex-basis: 32%;
         flex-direction: column;
-        margin: 0 10px;
+        gap: 0px;
+        
     }
     .boxiky {
         display: inline-flex;
+        gap: 10px;
+        align-items: stretch;
+    }
+    .ikona {
+        margin-top: 40px;
     }
 }
 
@@ -133,10 +142,42 @@ h2 {
 @media (min-width: 1100px) {
 
     .foto {
-        width: 100%;
+        max-width: 425px;
     }
 
     .uvod {
-        display: inline-flex;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .ctverec1 {
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .sluzby {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .boxiky {
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .box {
+        flex-basis: 40%;
+    }
+
+    .kancelare {
+        flex-direction: row-reverse;
+    }
+
+    .blok {
+        max-width: 1040px;
+        margin: 0px auto;
+    }
+
+    .text1 {
+        align-self: flex-start;
     }
 }
