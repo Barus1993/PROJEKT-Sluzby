@@ -124,8 +124,8 @@ h2 {
         height: auto;
         flex-basis: 32%;
         flex-direction: column;
+        margin: 0;
         gap: 0px;
-        
     }
     .boxiky {
         display: inline-flex;
@@ -141,31 +141,67 @@ h2 {
 
 @media (min-width: 1100px) {
 
-    .foto {
-        max-width: 425px;
-    }
-
     .uvod {
         display: flex;
         flex-direction: row-reverse;
-    }
-    .ctverec1 {
-        align-content: center;
-        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 80px;
     }
 
-    .sluzby {
-        display: flex;
+    .kancelare {
+        padding-bottom: 80px;
+    }
+    
+    .foto {
+        max-width: 425px;
+        align-self: center;
+    }
+
+    .ctverec2 {
+        max-width: 425px;
+        flex: 4 1 0%;
+    }
+
+    .ctverec1 {
+        flex: 3 0 0%;
+        align-items: center;
+        align-content: flex-start;
         justify-content: flex-start;
     }
 
     .boxiky {
-        gap: 20px;
-        flex-wrap: nowrap;
+        margin: 0;
     }
 
-    .box {
-        flex-basis: 40%;
+    .cara {
+        align-self: flex-start;
+    }
+    .radek {
+        align-self: flex-start;
+    }
+
+    .sluzby {
+        display: flex;
+        align-items: center;
+    }
+
+    .boxiky {
+        gap: 20px;
+        flex: 4 1 0%;
+    }
+
+    .text {
+        flex: 3 0 0%;
+        text-align: left;
+        align-items: center;
+    }
+
+    .pravy {
+        padding-left: 60px;
+    }
+
+    .levy {
+        padding-right: 60px;
     }
 
     .kancelare {
@@ -173,11 +209,10 @@ h2 {
     }
 
     .blok {
-        max-width: 1040px;
+        max-width: 1200px;
         margin: 0px auto;
+        padding: 60px 80px;
     }
 
-    .text1 {
-        align-self: flex-start;
-    }
+    
 }
